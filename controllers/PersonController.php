@@ -9,7 +9,7 @@ use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
-use\app\models\Person;
+use app\models\Person;
 
 class PersonController extends Controller
 {
@@ -70,19 +70,19 @@ class PersonController extends Controller
 
     public function actionCreate()
     {
-$oneperson = new Person();
+$model = new Person();
 $formdata = Yii::$app->request->post();
-if($oneperson->load($formdata)){
-    if($oneperson->save()){
+if($model->load($formdata)){
+    if($model->save()){
         Yii::$app->getSession()->setFlash('message','You have successfully added');
-        return $this->redirect(['index', 'id' => $oneperson->id]);
+        return $this->redirect(['index', 'id' => $person->id]);
     }
     else{
         Yii::$app->getSession()->setFlash('message', 'You wrong');
     }
 }
-return $this->render('create',['oneperson' => $oneperson]);
+return $this->render('create',['model' => $model]);
     }
-}
 
+}
 ?>

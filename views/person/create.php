@@ -18,56 +18,56 @@ $this->title = 'CRUDapp2';
         <div class="row">
             <div class="form-group">
                 <div class="col-lg-12">
-        <?= $form->field($oneperson, 'name');?>
+        <?= $form->field($model, 'name');?>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="form-group">
                 <div class="col-lg-12">
-        <?= $form->field($oneperson, 'lastname');?>
+        <?= $form->field($model, 'lastname');?>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="form-group">
                 <div class="col-lg-12">
-        <?= $form->field($oneperson, 'birthdate');?>
+        <?= $form->field($model, 'birthdate');?>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="form-group">
                 <div class="col-lg-12">
-        <?= $form->field($oneperson, 'birthplace');?>
+        <?= $form->field($model, 'birthplace');?>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="form-group">
                 <div class="col-lg-12">
-        <?= $form->field($oneperson, 'education');?>
+        <?= $form->field($model, 'education');?>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="form-group">
                 <div class="col-lg-12">
-        <?= $form->field($oneperson, 'privatelife');?>
+        <?= $form->field($model, 'privatelife');?>
                 </div>
             </div>
         </div>
                 <div class="row">
             <div class="form-group">
                 <div class="col-lg-12">
-        <?= $form->field($oneperson, 'work')?>
+        <?= $form->field($model, 'work')?>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="form-group">
                 <div class="col-lg-12">
-        <?= $form->field($oneperson, 'achievements')?>
+        <?= $form->field($model, 'achievements')?>
                 </div>
             </div>
         </div>
@@ -79,10 +79,14 @@ $this->title = 'CRUDapp2';
                 <div class="col-lg-12">
                <a href= <?php echo yii::$app->homeUrl;?> class="btn btn-primary">Come Back</a>
                 </div>
+             
             </div>
-        </div>
+          
         </div>
         <?php ActiveForm::end(); ?>
         </div>
+     
+        </div>
+
     </div>
 
